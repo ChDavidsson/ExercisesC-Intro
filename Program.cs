@@ -21,6 +21,24 @@ class Program
         // Beräkna sedan vilket år de är födda.
         Console.WriteLine($"Okay, so you are born {Born}?");
         
+        // Be användaren skriva:
+        // Ett heltal
+        Console.WriteLine("Write an integer:");
+        string integer = Console.ReadLine()!;
+        int heltal = Convert.ToInt32(integer);
+
+        // Ett decimaltal
+        Console.WriteLine("Write a decimal number:");
+        string deciNumber = Console.ReadLine()!;
+        double deciTal = Convert.ToDouble(deciNumber);
+
+        // Ett värde som är true eller false
+        Console.WriteLine("Write true or false:");
+        string truefalse = Console.ReadLine()!;
+        bool minBool = Convert.ToBoolean(truefalse);
+
+        // Skriv sedan ut all information igen på en rad.
+        Console.WriteLine($"You wrote: {heltal}, {deciTal} and {minBool}");
 
     }
 }
