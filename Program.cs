@@ -39,6 +39,19 @@ class Program
 
         // Skriv sedan ut all information igen på en rad.
         Console.WriteLine($"You wrote: {heltal}, {deciTal} and {minBool}");
-
+        
+        // Be användaren skriva in två heltal.
+        // Konvertera texten till tal med Convert.ToInt32().
+        Console.WriteLine("Please provide a number:");
+        string number1 = Console.ReadLine()!;
+        int nummer1 = Convert.ToInt32(number1);
+        Console.WriteLine("Please provide another number:");
+        string number2 = Console.ReadLine()!;
+        int nummer2 = Convert.ToInt32(number2);
+        // Räkna ut summan av talen.
+        int total = nummer1 + nummer2;
+        int multiplikation = nummer1 * nummer2;
+        // Skriv ut resultatet i konsolen.
+        Console.WriteLine($"The sum of your numbers is: {total} and multiplicated it is: {multiplikation}");
     }
 }
