@@ -9,6 +9,7 @@ class Program
         string input = Console.ReadLine()!;
         
         // Skriv sedan ut ett meddelande som säger "Hej [namn]!"
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine($"Hej {input}!");
 
         // Be användaren skriva hur gammal de är.
@@ -19,10 +20,12 @@ class Program
         const int Year = 2026;
         int Born = Year - age;
         // Beräkna sedan vilket år de är födda.
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Okay, so you are born {Born}?");
         
         // Be användaren skriva:
         // Ett heltal
+        Console.ResetColor();
         Console.WriteLine("Write an integer:");
         string integer = Console.ReadLine()!;
         int heltal = Convert.ToInt32(integer);
@@ -54,5 +57,7 @@ class Program
         // Skriv ut resultatet i konsolen.
         Console.WriteLine($"The sum of your numbers is: {total}");
         Console.WriteLine($"And multiplicated it is: {multiplikation}");
+
+
     }
 }
