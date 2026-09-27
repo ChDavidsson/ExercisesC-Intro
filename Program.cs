@@ -52,6 +52,7 @@ class Program
         int total = nummer1 + nummer2;
         int multiplikation = nummer1 * nummer2;
         // Skriv ut resultatet i konsolen.
-        Console.WriteLine($"The sum of your numbers is: {total} and multiplicated it is: {multiplikation}");
+        Console.WriteLine($"The sum of your numbers is: {total}");
+        Console.WriteLine($"And multiplicated it is: {multiplikation}");
     }
 }
